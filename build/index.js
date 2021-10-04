@@ -1,7 +1,8 @@
 "use strict";
-var person;
-person = 'Rory';
-var buildPerson = function (person) {
-    return "your person is " + person;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-console.log(buildPerson(person));
+Object.defineProperty(exports, "__esModule", { value: true });
+var lodash_1 = __importDefault(require("lodash"));
+console.log(lodash_1.default.add(3, 4));
+console.log(lodash_1.default.dropRight([1, 2, 3, 4, 5], 2));

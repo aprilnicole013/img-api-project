@@ -1,9 +1,5 @@
-let person;
+import _ from 'lodash';
 
-person = 'Rory';
+console.log(_.add(3, 4));
 
-const buildPerson = (person: string) => {
-    return `your person is ${person}`
-};
-
-console.log(buildPerson(person))
+console.log(_.dropRight([1,2,3,4,5], 2))
