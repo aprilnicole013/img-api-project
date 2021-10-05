@@ -7,11 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .js",
     "prettier": "prettier --config .prettierrc 'index.js' --write",
-    "build": "npx tsc"
+    "build": "npx tsc",
+    "jasmine": "jasmine"
   },
   "author": "April Cunningham",
   "license": "ISC",
   "devDependencies": {
+    "@types/jasmine": "^3.9.1",
     "@types/lodash": "^4.14.175",
     "@types/node": "^16.10.2",
     "eslint": "^7.32.0",
@@ -22,6 +24,8 @@
     "typescript": "^4.4.3"
   },
   "dependencies": {
+    "jasmine": "^3.9.0",
+    "jasmine-spec-reporter": "^7.0.0",
     "lodash": "^4.17.21"
   }
 }
