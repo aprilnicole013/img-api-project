@@ -1,0 +1,64 @@
+Arguments: 
+  /usr/local/bin/node /opt/homebrew/bin/yarn add –dev jasmine
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Users/aprilcunningham/.antigen/bundles/robbyrussell/oh-my-zsh/lib:/Users/aprilcunningham/.antigen/bundles/lukechilds/zsh-nvm:/Users/aprilcunningham/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git:/Users/aprilcunningham/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/heroku:/Users/aprilcunningham/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/pip:/Users/aprilcunningham/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/lein:/Users/aprilcunningham/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found:/Users/aprilcunningham/.antigen/bundles/zsh-users/zsh-syntax-highlighting
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.18.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters
+      at new NodeError (internal/errors.js:322:7)
+      at new ClientRequest (_http_client.js:155:13)
+      at Object.request (https.js:370:10)
+      at Request.module.exports.Request.start (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:141325:32)
+      at Request.module.exports.Request.end (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:142084:10)
+      at end (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:141138:14)
+      at Immediate._onImmediate (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:141152:7)
+      at processImmediate (internal/timers.js:464:21)
+
+npm manifest: 
+  {
+    "name": "img-api-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "npm run build && npm run jasmine",
+      "lint": "eslint . --ext .js",
+      "prettier": "prettier --config .prettierrc 'index.js' --write",
+      "build": "npx tsc",
+      "jasmine": "jasmine"
+    },
+    "author": "April Cunningham",
+    "license": "ISC",
+    "devDependencies": {
+      "@types/jasmine": "^3.9.1",
+      "@types/lodash": "^4.14.175",
+      "@types/node": "^16.10.2",
+      "eslint": "^7.32.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-plugin-prettier": "^4.0.0",
+      "jasmine": "^3.9.0",
+      "prettier": "^2.4.1",
+      "ts-node": "^10.2.1",
+      "typescript": "^4.4.3"
+    },
+    "dependencies": {
+      "jasmine-spec-reporter": "^7.0.0",
+      "lodash": "^4.17.21"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

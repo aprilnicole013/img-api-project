@@ -1,5 +1,5 @@
-import _ from 'lodash';
+const myFunc = (num: number): number => {
+    return num * num
+}
 
-console.log(_.add(3, 4));
-
-console.log(_.dropRight([1,2,3,4,5], 2))
+export default myFunc
