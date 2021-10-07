@@ -1,5 +1,4 @@
 //holds tests for code in index.js file
-import myFunc from '../index';
 import supertest from 'supertest';
 import app from '../index';
 
@@ -11,8 +10,4 @@ describe('Test endpoint responses', () => {
         done();
     }
 )});
-
-it('expect myFunc(5) to equal 25', () => {
-    expect(myFunc(5)).toEqual(25)
-})
 
