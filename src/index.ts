@@ -1,10 +1,10 @@
-const express = require('express')
+import routes from "../build/src/routes";
+import express from 'express';
+
 const app = express();
 const port = 3000;
 
-app.get('/', (req: any, res: { send: (arg0: string) => void; }) => {
-    res.send('server is working');
-});
+app.use('/api', routes);
 
 app.listen(port, () => {
     console.log(`server started at localhost:${port}`);
