@@ -1,3 +1,38 @@
+File Structure
+
+├── node_modules
+├── build
+│     ├──  assets
+│     │     ├── images
+│     │     │      ├── encenadaport.jpg
+│     │     │      ├── fjord.jpg 
+│     │     │      ├── icelandwaterfall.jpg
+│     │     │      ├── palmtunnel.jpg
+│     │     │      └── santamonica.jpg  
+│     ├──  src
+│     |     ├──  tests     
+│     │     │       ├── helpers
+│     │     │       │      └── reporter.ts
+│     │     │       ├── indexSpec.js      
+│     │     ├── routes  
+│     │     │   │     ├── api
+│     │     │   │     │    ├── route1.js
+│     │     │   │     │    ├── route1.ts
+│     │     │   ├── index.js
+│     │     │   ├── index.ts    
+├── spec
+│      └── support
+│           └── jasmine.json
+├── src
+│     ├──  tests
+│     │     ├── helpers
+│     │     │      └── reporter.ts
+│     │     └── indexSpec.ts
+│     └── index.ts
+├── package-lock.json
+├── package.json
+└── tsconfig.json
+
 ##Environment Dependencies
 
 1. Install Node modules
