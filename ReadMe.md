@@ -34,6 +34,9 @@ npm i --save-dev @types/express
 8. Install nodemon
 npm i --save-dev nodemon
 
+9. Install Sharp for image resizing
+npm install sharp
+
 
 ##Build and start the server
 
