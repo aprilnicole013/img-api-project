@@ -2,3 +2,7 @@
 package-lock.json
 tsconfig.json
 yarn-error.log
+.eslintrc
+.prettierrc
+tsconfig.json
+.DS_Store

@@ -3,8 +3,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-//holds tests for code in index.js file
-var index_1 = __importDefault(require("../index"));
-it('expect myFunc(5) to equal 25', function () {
-    expect((0, index_1.default)(5)).toEqual(25);
+var express_1 = __importDefault(require("express"));
+var route1 = express_1.default.Router();
+route1.get('/', function (req, res) {
+    res.send('Route #1');
 });
+exports.default = route1;

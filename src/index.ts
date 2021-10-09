@@ -1,5 +1,5 @@
-import routes from "../build/src/routes";
-import express from 'express';
+import routes from "../build/src/routes/index";
+import express from 'express'
 
 const app = express();
 const port = 3000;

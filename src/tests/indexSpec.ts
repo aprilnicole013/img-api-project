@@ -1,5 +1,8 @@
 //holds tests for code in index.js file
 import supertest from 'supertest';
+import express from 'express';
+
+const app = express();
 
 const request = supertest(app);
 describe('Test endpoint responses', () => {
