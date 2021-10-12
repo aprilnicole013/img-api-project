@@ -1,4 +1,3 @@
-//holds tests for code in index.js file
 import supertest from 'supertest';
 import express from 'express';
 
@@ -11,5 +10,4 @@ describe('Test endpoint responses', () => {
         expect(response.status).toBe(200);
         done();
     }
-)});
-
+)});                                                    

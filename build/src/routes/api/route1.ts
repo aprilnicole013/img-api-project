@@ -1,10 +1,11 @@
 import express from 'express';
+import path from 'path';
 
-const route1 = express.Router();
+const images = express.Router();
 const sharp = require('sharp');
 
-route1.get('/', (req, res) => {
-    res.send('Route #1')
+images.get('/', async (req: express.Request, res: express.Response) => {
+    res.send('Images')
 })
 
-export default route1
+export default images
