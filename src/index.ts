@@ -1,4 +1,4 @@
-// import images from "./routes/api/images";
+import images from "./routes/images";
 import express from 'express';
 
 const app = express();
