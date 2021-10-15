@@ -9,8 +9,8 @@ describe('Test endpoint responses', () => {
     const testWidth = 200
     const testHeight = 200
     const testFileName = 'icelandwaterfall';
-    const imgName = `${testFileName}.jpg`
-    const imgPath = path.join('./asssets/images', imgName)
+    const imgName = `${testFileName}_${testWidth}_${testHeight}.jpg`
+    const imgPath = path.join('./asssets/images', 'thumbs',imgName)
     
     beforeAll(async () => {
         if (fs.existsSync(imgPath)){
@@ -25,7 +25,7 @@ describe('Test endpoint responses', () => {
     it('tests valid request to api endpoint', async () => {
         expect(fs.existsSync(imgPath)).toBeFalse();
         const response = await request.get(`/api/images?filename=${testFileName}&width=${testWidth}&height=${testHeight}`)
-        expect(response.status).toBeTrue()
+        expect(response.status).toBe(200)
         expect(fs.existsSync(imgPath)).toBeTrue()
     })
 });
