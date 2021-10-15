@@ -72,6 +72,9 @@ npm i --save-dev nodemon
 9. Install Sharp for image resizing
 npm install sharp
 
+10. Install Jimp for additional image resizing
+npm install --save jimp
+
 
 ##Build and start the server
 
