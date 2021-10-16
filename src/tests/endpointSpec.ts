@@ -9,7 +9,7 @@ describe('Test endpoint responses:', () => {
     const testHeight = 200
     const testFileName = 'fjord';
     const imgName = `${testFileName}_${testWidth}_${testHeight}.jpg`
-    const imgPath = path.join('./assets/images', 'thumbs',imgName)
+    const imgPath = path.join('./assets', 'thumbs',imgName)
     
     beforeAll(async () => {
         if (fs.existsSync(imgPath)){
@@ -28,7 +28,8 @@ describe('Test endpoint responses:', () => {
     
     it('tests VALID request to api endpoint', async () => {
         expect(fs.existsSync(imgPath)).toBeFalse();
-        const response = await request.get(`/api/image?filename=${testFileName}&width=${testWidth}&height=${testHeight}`)
+        const response = await request.get(`/api/image?filename=${testFileName}&width=${testWidth}&height=${testHeight}`
+        )
         expect(response.status).toBe(200)
         expect(fs.existsSync(imgPath)).toBeTrue()
     })

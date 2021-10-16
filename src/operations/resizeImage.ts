@@ -13,8 +13,7 @@ const resizeImage = async (
 
         if (!fs.existsSync(path.join('./assets', 'thumbs', newFilename))) {
             console.log('creating resized images');
-            await sharp(`./assets/full/${filename}.jpg`).
-            resizeImage(width, height).toFile(path.join('/assets', 'thumbs', newFilename))
+            await sharp(`./assets/full/${filename}.jpg`).resizeImage(width, height).toFile(path.join('./assets', 'thumbs', newFilename))
         }
         return { success: true, result: newFilename }
     }catch (error){
