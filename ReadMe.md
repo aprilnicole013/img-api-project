@@ -1,17 +1,14 @@
 File Structure
 
 |-- img-api-project
-    |-- .DS_Store
     |-- .eslintrc
     |-- .gitignore
     |-- .prettierrc
     |-- ReadMe.md
-    |-- directoryList.md
     |-- package-lock.json
     |-- package.json
     |-- tsconfig.json
     |-- assets
-    |   |-- .DS_Store
     |   |-- full
     |   |   |-- encenadaport.jpg
     |   |   |-- fjord.jpg
