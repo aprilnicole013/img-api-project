@@ -17,12 +17,6 @@
     |   |   |-- palmtunnel.jpg
     |   |   |-- santamonica.jpg
     |   |-- thumbs
-    |       |-- fjord_200_200.jpg
-    |       |-- santamonica_100_100.jpg
-    |       |-- santamonica_200_200.jpeg
-    |       |-- santamonica_200_200.jpg
-    |       |-- santamonica_300_300.jpg
-    |       |-- santamonica_700_500.jpg
     |-- spec
     |   |-- support
     |       |-- jasmine.json
