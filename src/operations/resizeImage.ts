@@ -1,6 +1,5 @@
 import path from 'path';
 import fs from 'fs';
-import { error } from 'console';
 
 const sharp = require('sharp')
 
@@ -15,10 +14,10 @@ const resizeImage = async (
         if (!fs.existsSync(path.join('./assets', 'thumbs', newFilename))) {
             console.log('creating resized images');
             await sharp(`./assets/full/${filename}.jpg`).
-            resizeImage(width, height).toFile(path.join('./assets', 'thumbnails', newFilename))
+            resizeImage(width, height).toFile(path.join('/assets', 'thumbs', newFilename))
         }
         return { success: true, result: newFilename }
-    }catch (err){
+    }catch (error){
         return {success: false, result: "Cannot resize image"}
     }
 }

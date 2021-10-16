@@ -6,3 +6,5 @@ yarn-error.log
 .prettierrc
 tsconfig.json
 .DS_Store
+directoryList.md
+/build

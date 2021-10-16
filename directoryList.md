@@ -1,4 +1,4 @@
-|-- Documents
+|-- img-api-project
     |-- .DS_Store
     |-- .eslintrc
     |-- .gitignore
@@ -8,61 +8,35 @@
     |-- package-lock.json
     |-- package.json
     |-- tsconfig.json
-    |-- yarn-error.log
-    |-- build
+    |-- assets
     |   |-- .DS_Store
-    |   |-- index.js
-    |   |-- build
-    |   |   |-- index.js
-    |   |   |-- build
-    |   |   |   |-- index.js
-    |   |   |   |-- build
-    |   |   |   |   |-- index.js
-    |   |   |   |   |-- tests
-    |   |   |   |       |-- indexSpec.js
-    |   |   |   |       |-- helpers
-    |   |   |   |           |-- reporter.js
-    |   |   |   |-- src
-    |   |   |   |   |-- index.js
-    |   |   |   |   |-- tests
-    |   |   |   |       |-- indexSpec.js
-    |   |   |   |       |-- helpers
-    |   |   |   |           |-- reporter.js
-    |   |   |   |-- tests
-    |   |   |       |-- indexSpec.js
-    |   |   |       |-- helpers
-    |   |   |           |-- reporter.js
-    |   |   |-- src
-    |   |   |   |-- index.js
-    |   |   |   |-- tests
-    |   |   |       |-- indexSpec.js
-    |   |   |       |-- helpers
-    |   |   |           |-- reporter.js
-    |   |   |-- tests
-    |   |       |-- indexSpec.js
-    |   |       |-- helpers
-    |   |           |-- reporter.js
-    |   |-- src
-    |   |   |-- index.js
-    |   |   |-- routes
-    |   |   |   |-- index.ts
-    |   |   |   |-- api
-    |   |   |       |-- route1.ts
-    |   |   |       |-- route2.ts
-    |   |   |-- tests
-    |   |       |-- indexSpec.js
-    |   |       |-- helpers
-    |   |           |-- reporter.js
-    |   |-- tests
-    |       |-- indexSpec.js
-    |       |-- helpers
-    |           |-- reporter.js
+    |   |-- full
+    |   |   |-- encenadaport.jpg
+    |   |   |-- fjord.jpg
+    |   |   |-- icelandwaterfall.jpg
+    |   |   |-- palmtunnel.jpg
+    |   |   |-- santamonica.jpg
+    |   |-- thumbs
+    |       |-- fjord_200_200.jpg
+    |       |-- santamonica_100_100.jpg
+    |       |-- santamonica_200_200.jpeg
+    |       |-- santamonica_200_200.jpg
+    |       |-- santamonica_300_300.jpg
+    |       |-- santamonica_700_500.jpg
     |-- spec
     |   |-- support
     |       |-- jasmine.json
     |-- src
         |-- index.ts
+        |-- middleware
+        |   |-- imageValidator.ts
+        |-- operations
+        |   |-- resizeImage.ts
+        |-- routes
+        |   |-- help.ts
+        |   |-- images.ts
         |-- tests
-            |-- indexSpec.ts
+            |-- endpointSpec.ts
+            |-- imagesSpec.ts
             |-- helpers
                 |-- reporter.ts

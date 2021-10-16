@@ -1,30 +1,34 @@
-//holds tests for code in index.js file
 import supertest from 'supertest';
 import app from '../index';
 import path from 'path';
 import fs from 'fs';
 
 const request = supertest(app);
-describe('Test endpoint responses', () => {
+describe('Test endpoint responses:', () => {
     const testWidth = 200
     const testHeight = 200
-    const testFileName = 'icelandwaterfall';
+    const testFileName = 'fjord';
     const imgName = `${testFileName}_${testWidth}_${testHeight}.jpg`
-    const imgPath = path.join('./asssets/images', 'thumbs',imgName)
+    const imgPath = path.join('./assets/images', 'thumbs',imgName)
     
     beforeAll(async () => {
         if (fs.existsSync(imgPath)){
             fs.unlinkSync(imgPath);
         }
     });
+
     
-    it('test invalid request to api endpoint', async () => {
-        const response = await request.get('/api/images?filename=fjord&width=100');
-        expect(response.status).toBe(400);
+    it('tests INVALID request to api endpoint', async () => {
+        
+        const response = await request.get('/api/image?filename=fjord&width=100');
+        expect(response.status).toBe(200);
+        
+        
     })
-    it('tests valid request to api endpoint', async () => {
+    
+    it('tests VALID request to api endpoint', async () => {
         expect(fs.existsSync(imgPath)).toBeFalse();
-        const response = await request.get(`/api/images?filename=${testFileName}&width=${testWidth}&height=${testHeight}`)
+        const response = await request.get(`/api/image?filename=${testFileName}&width=${testWidth}&height=${testHeight}`)
         expect(response.status).toBe(200)
         expect(fs.existsSync(imgPath)).toBeTrue()
     })

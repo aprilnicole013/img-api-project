@@ -6,7 +6,7 @@ import Jimp from 'jimp';
 describe('Test image resize operation', () => {
     const testWidth = 200;
     const testHeight = 200;
-    const testFileName = 'icelandwaterfall'
+    const testFileName = 'fjord'
     const imgPath = path.join('./assets', 'thumbs', `${testFileName}_${testWidth}_${testHeight}.jpg`)
 
     beforeAll(async () => {
@@ -15,7 +15,7 @@ describe('Test image resize operation', () => {
         }
     })
 
-    it('test resize operation on image', async () => {
+    it('image resize', async () => {
         const response = await resizeImage(testWidth, testHeight, testFileName)
         expect(response.success).toBeTrue()
         const resizedImg = await Jimp.read(path.join('./assets', 'thumbs', response.result))
