@@ -1,6 +1,6 @@
 import images from './routes/api/images';
 import imageValidator from './middleware/imageValidator';
-import help from './routes/api/help'
+import help from './routes/api/help';
 import express from 'express';
 
 const app = express();
@@ -11,7 +11,7 @@ app.use('/api/images', imageValidator, images);
 app.use('/api*', help);
 
 app.listen(port, () => {
-    console.log(`server started at localhost:${port}`);
+  console.log(`server started at localhost:${port}`);
 });
 
-export default app
+export default app;
