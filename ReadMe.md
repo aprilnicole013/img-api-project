@@ -83,10 +83,8 @@ npm install --save jimp
 ###Run the Build - This command will build the typeScript code into JavaScript and save them in the ./build folder.
 npm run build
 
-###Start the server on configured port: http://localhost:5000
-npm start
-
-##Testing
+###Start the server on configured port: http://localhost:3000/api
+npm run start
 
 ###Run ESLint
 npm run lint
