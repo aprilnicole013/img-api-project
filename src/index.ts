@@ -1,6 +1,6 @@
-import images from './routes/images';
+import images from './routes/api/images';
 import imageValidator from './middleware/imageValidator';
-import help from './routes/help'
+import help from './routes/api/help'
 import express from 'express';
 
 const app = express();

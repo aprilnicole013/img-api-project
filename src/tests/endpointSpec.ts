@@ -28,7 +28,7 @@ describe('Test endpoint responses:', () => {
     
     it('tests VALID request to api endpoint', async () => {
         expect(fs.existsSync(imgPath)).toBeFalse();
-        const response = await request.get(`/api/image?filename=${testFileName}&width=${testWidth}&height=${testHeight}`
+        const response = await request.get(`/api/images?filename=${testFileName}&width=${testWidth}&height=${testHeight}`
         )
         expect(response.status).toBe(200)
         expect(fs.existsSync(imgPath)).toBeTrue()

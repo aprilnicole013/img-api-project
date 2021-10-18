@@ -1,5 +1,5 @@
 import express from 'express';
-import resizeImage from '../operations/resizeImage';
+import resizeImage from '../../operations/resizeImage';
 import path from 'path';
 
 const images = express.Router();
