@@ -17,6 +17,10 @@ images.get('/', async (req: express.Request, res: express.Response) => {
       res.send(resize.result);
     }
   }
+
+  if (isNaN(width) == true || isNaN(height) == true) {
+    res.send('Please enter valid paramaters');
+  }
 });
 
 export default images;
