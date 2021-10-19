@@ -1,44 +1,7 @@
-Image Processing API
+# Image Processing API
 
 ## Introduction
 This project is an image processing API. Four images can be queried and resized within the browser. To access the images, navigate to localhost:3000/api and enter the valid parameters to see the image resized in the browser. Once the image is resized, a copy will be pushed to the thumbs folder in your local directory.
-
-## File Structure
-
-|-- img-api-project
-    |-- .eslintrc
-    |-- .gitignore
-    |-- .prettierrc
-    |-- ReadMe.md
-    |-- package-lock.json
-    |-- package.json
-    |-- tsconfig.json
-    |-- assets
-    |   |-- full
-    |   |   |-- encenadaport.jpg
-    |   |   |-- fjord.jpg
-    |   |   |-- icelandwaterfall.jpg
-    |   |   |-- palmtunnel.jpg
-    |   |   |-- santamonica.jpg
-    |   |-- thumbs
-    |-- spec
-    |   |-- support
-    |       |-- jasmine.json
-    |-- src
-        |-- index.ts
-        |-- middleware
-        |   |-- imageValidator.ts
-        |-- operations
-        |   |-- resizeImage.ts
-        |-- routes
-        |   |-- help.ts
-        |   |-- images.ts
-        |-- tests
-            |-- endpointSpec.ts
-            |-- imagesSpec.ts
-            |-- helpers
-                |-- reporter.ts
-
 
 ## Installations
 
@@ -82,17 +45,16 @@ npm install sharp
 10. Install Jimp for additional image resizing
 npm install --save jimp
 
-
 ## Build and start the server
 
 Run the Build - This command will build the typeScript code into JavaScript and save them in the ./build folder.
-npm run build
+```npm run build```
 
 Start the server on configured port: http://localhost:3000/api
-npm run start
+```npm run start```
 
 Run ESLint
-npm run lint
+```npm run lint```
 
 Run Jasmine and Supertest
-npm run test
+```npm run test```
