@@ -1,5 +1,6 @@
 import path from 'path';
 import fs from 'fs';
+import {error} from 'console';
 
 const sharp = require('sharp');
 
@@ -19,7 +20,7 @@ const resizeImage = async (
     }
     return { success: true, result: newFilename };
   } catch (error) {
-    return { success: false, result: 'Cannot resize image' };
+    return { success: false, result: 'Cannot resize image. Please enter valid parameters' };
   }
 };
 
