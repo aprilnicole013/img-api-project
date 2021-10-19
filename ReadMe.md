@@ -1,4 +1,9 @@
-File Structure
+Image Processing API
+
+## Introduction
+This project is an image processing API. Four images can be queried and resized within the browser. To access the images, navigate to localhost:3000/api and enter the valid parameters to see the image resized in the browser. Once the image is resized, a copy will be pushed to the thumbs folder in your local directory.
+
+## File Structure
 
 |-- img-api-project
     |-- .eslintrc
@@ -35,7 +40,7 @@ File Structure
                 |-- reporter.ts
 
 
-##Environment Dependencies
+## Installations
 
 1. Install Node modules
 npm install
@@ -78,16 +83,16 @@ npm install sharp
 npm install --save jimp
 
 
-##Build and start the server
+## Build and start the server
 
-###Run the Build - This command will build the typeScript code into JavaScript and save them in the ./build folder.
+Run the Build - This command will build the typeScript code into JavaScript and save them in the ./build folder.
 npm run build
 
-###Start the server on configured port: http://localhost:3000/api
+Start the server on configured port: http://localhost:3000/api
 npm run start
 
-###Run ESLint
+Run ESLint
 npm run lint
 
-###Run Jasmine and Supertest
+Run Jasmine and Supertest
 npm run test
